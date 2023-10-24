@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Friendly Survey Form</title>
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS for star-shaped buttons -->
+    <style>
+        .star-btn {
+            border: none;
+            background: none;
+            font-size: 36px;
+            cursor: pointer;
+            outline: none;
+            color: #ffc107;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header text-center bg-primary text-white">
+                        <h2>Company Survey form</h2>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="rating">Star Rating <span class="text-danger">*</span></label>
+                                <div class="text-left mb-3">
+                                    <button type="button" class="star-btn">&#9733;</button>
+                                    <button type="button" class="star-btn">&#9733;</button>
+                                    <button type="button" class="star-btn">&#9733;</button>
+                                    <button type="button" class="star-btn">&#9733;</button>
+                                    <button type="button" class="star-btn">&#9733;</button>
+                                </div>
+                            </div>
+                      
+                            <div class="form-group ">
+                              
+                                <label>Purchase Experience <span class="text-danger">*</span></label><br>
+                              <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="experience" id="very unsatisfied" value="very unsatisfied" required>
+                                    <label class="form-check-label" for="very unsatisfied">very unsatisfied</label>
+                                </div>
+                            
+                        <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="experience" id="unsatisfied" value="unsatisfied" required>
+                                    <label class="form-check-label" for="unsatisfied">unsatisfied</label>
+                                </div>
+                            
+                           
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="experience" id="neutral" value="neutral" required>
+                                    <label class="form-check-label" for="neutralr">neutral</label>
+                                </div>
+                             
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="experience" id="satisfied" value="satisfied" required>
+                                    <label class="form-check-label" for="satisfied">satisfied</label>
+                                </div>
+                          
+                            
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="experience" id="excellent" value="excellent" required>
+                                    <label class="form-check-label" for="excellent">excellent</label>
+                             
+                                </div>
+                         
+
+                            <div class="form-group">
+                        
+                                <label>service<span class="text-danger">*</span></label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="service" id="very unsatisfied" value="very unsatisfied" required>
+                                    <label class="form-check-label" for="very unsatisfied">very unsatisfied</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="service" id="unsatisfied" value="unsatisfied" required>
+                                    <label class="form-check-label" for="unsatisfied">unsatisfied</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="service" id="neutral" value="neutral" required>
+                                    <label class="form-check-label" for="neutralr">neutral</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="service" id="satisfied" value="satisfied" required>
+                                    <label class="form-check-label" for="satisfied">satisfied</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="service" id="excellent" value="excellent" required>
+                                    <label class="form-check-label" for="excellent">excellent</label>
+                           
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Company Overall<span class="text-danger">*</span></label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="Company Overall" id="very unsatisfied" value="very unsatisfied" required>
+                                    <label class="form-check-label" for="very unsatisfied">very unsatisfied</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="Company Overall" id="unsatisfied" value="unsatisfied" required>
+                                    <label class="form-check-label" for="unsatisfied">unsatisfied</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="Company Overall" id="neutral" value="neutral" required>
+                                    <label class="form-check-label" for="neutralr">neutral</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="Company Overall" id="satisfied" value="satisfied" required>
+                                    <label class="form-check-label" for="satisfied">satisfied</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="Company Overall" id="excellent" value="excellent" required>
+                                    <label class="form-check-label" for="excellent">excellent</label>
+                                </div>
+                                
+                            </div>
+
+                            <div class="form-group">
+                                <label for="feedback">Feedback</label>
+                                <textarea class="form-control" id="feedback" rows="3" placeholder="Enter your feedback"></textarea>
+                            </div> 
+
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
